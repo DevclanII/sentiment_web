@@ -36,3 +36,17 @@ ul.nav{
   padding-bottom: 30px;
   padding-left: 20px;
 }
+
+.py-about{
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+
+.inner {
+  background-attachment: fixed, fixed, fixed;
+  background-image: url("../images/overlay2.png"), url("../images/overlay3.svg"), linear-gradient(45deg, #9dc66b 5%, #4fa49a 30%, #4361c2);
+  background-position: top left, center center, center center;
+  background-size: auto, cover, cover;
+  overflow: hidden;
+  position: relative;
+}

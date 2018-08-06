@@ -1,12 +1,12 @@
 import React from 'react';
 
-const Nav = () => (
+export const Nav = () => (
 <ul className = "nav">
     <li className="nav-item">
-      <a className="nav-link active" href="#">Home</a>
+      <a className="nav-link active" href="/">Home</a>
     </li>
     <li className="nav-item">
-      <a className="nav-link" href="#">About</a>
+      <a className="nav-link" href="/About">About</a>
     </li>
     <li className="nav-item">
       <a className="nav-link" href="#">Docs</a>
@@ -20,11 +20,7 @@ const Nav = () => (
   </ul>
 );
 
-const Faq = ( ) => (
-  <div></div>
-);
-
-class Header extends React.Component {
+export class Header extends React.Component {
     render() {
       return (
        <div className="container-fluid">
@@ -42,7 +38,6 @@ class Header extends React.Component {
                   <button type="button" class="btn btn-outline-dark round" style={{ borderRadius: '30px'}}>Read More</button>
                </div>
              </div>
-              
            </div>
          </div>
        </div>
@@ -50,5 +45,3 @@ class Header extends React.Component {
    }
 
 }
-
-export default Header;
