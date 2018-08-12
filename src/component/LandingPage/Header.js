@@ -1,7 +1,7 @@
 import React from 'react';
 
 export const Nav = () => (
-<ul className = "nav">
+  <ul className= "nav">
     <li className="nav-item">
       <a className="nav-link active" href="/">Home</a>
     </li>
