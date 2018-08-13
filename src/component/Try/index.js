@@ -9,11 +9,11 @@ class Try extends React.Component {
       <div className="container-fluid wraper">
         <div className="row">
           <SideBar />
-          <div className="col-md-9" id="scrol" style={{height: '100vh'}}>
+          <div className="col-mdgit -9" id="scrol" style={{height: '100vh'}}>
             <div className="row">
               <ul className="nav navbar navbar-light bg-white fixed-top justify-content-end" style={{ width: '100%', zIndex: '999' }}>
-                <button type="button" id="sidebarCollapse" class="btn btn-dark btn-sm mr-auto">
-                  <i class="fa fa-align-justify"></i>
+                <button type="button" id="sidebarCollapse" className="btn btn-dark btn-sm mr-auto">
+                  <i className="fa fa-align-justify"></i>
                 </button>
                 <li className="nav-item">
                   <a className="nav-link active" href="/">Home</a>

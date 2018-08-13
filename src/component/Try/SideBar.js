@@ -8,7 +8,7 @@ const SideBar = () => (
   }}>
     <div>
       <button id="dismiss" className="pb-4 btn btn-sm btn-secondary">
-        <i class="fa fa-arrow-left"></i>
+        <i className="fa fa-arrow-left"></i>
       </button>
       <img
         alt="log"
@@ -16,11 +16,11 @@ const SideBar = () => (
         className="img-fluid pt-4 my-4"/>
       <div>
         <form>
-          <div class="form-group">
+          <div className="form-group">
             <label for="Search" className="text-light">Search</label>
             <div className="input-group">
-              <div class="input-group-prepend">
-                <span class="input-group-text" id="basic-addon1">
+              <div className="input-group-prepend">
+                <span className="input-group-text" id="basic-addon1">
                   <i className="fa fa-search"></i>
                 </span>
               </div>
@@ -28,34 +28,34 @@ const SideBar = () => (
                 type="text"
                 name="Search"
                 id="Search"
-                class="form-control"
+                className="form-control"
                 placeholder="Terragon, Davido, yakata"
                 aria-describedby="helpId"/>
             </div>
-            <small id="helpId" class="text-muted text-light">enter mention, tag, handler to search</small>
+            <small id="helpId" className="text-muted text-light">enter mention, tag, handler to search</small>
           </div>
-          <div class="form-group">
+          <div className="form-group">
             <label for="count" className="text-light">No of Tweet</label>
             <div className="input-group">
-              <div class="input-group-prepend">
-                <span class="input-group-text" id="basic-addon1">last
+              <div className="input-group-prepend">
+                <span className="input-group-text" id="basic-addon1">last
                 </span>
               </div>
               <input
                 type="text"
                 name="count"
                 id="count"
-                class="form-control"
+                className="form-control"
                 placeholder="200, 300, 400"
                 aria-describedby="helpId"/>
-              <div class="input-group-prepend">
-                <span class="input-group-text" id="basic-addon1">tweet
+              <div className="input-group-prepend">
+                <span className="input-group-text" id="basic-addon1">tweet
                 </span>
               </div>
             </div>
-            <small id="helpId" class="text-muted text-light">enter the no of last tweet to check.</small>
+            <small id="helpId" className="text-muted text-light">enter the no of last tweet to check.</small>
           </div>
-          <button type="submit" class="btn btn-light">Submit</button>
+          <button type="submit" className="btn btn-light">Submit</button>
         </form>
       </div>
       <div className="py-4 text-dark">
@@ -67,95 +67,95 @@ const SideBar = () => (
             style={{
             maxHeight: '300px'
           }}>
-            <li class="list-group-item d-flex justify-content-between align-items-center">
+            <li className="list-group-item d-flex justify-content-between align-items-center">
               <a>Tinubu</a>
-              <span class="badge badge-success">40%</span>
-              <span class="badge badge-danger">50%</span>
-              <span class="badge badge-warning">10%</span>
+              <span className="badge badge-success">40%</span>
+              <span className="badge badge-danger">50%</span>
+              <span className="badge badge-warning">10%</span>
             </li>
-            <li class="list-group-item d-flex justify-content-between align-items-center">
+            <li className="list-group-item d-flex justify-content-between align-items-center">
               <a>Buhari</a>
-              <span class="badge badge-success">40%</span>
-              <span class="badge badge-danger">50%</span>
-              <span class="badge badge-warning">10%</span>
+              <span className="badge badge-success">40%</span>
+              <span className="badge badge-danger">50%</span>
+              <span className="badge badge-warning">10%</span>
             </li>
-            <li class="list-group-item d-flex justify-content-between align-items-center">
+            <li className="list-group-item d-flex justify-content-between align-items-center">
               <a>Drake</a>
-              <span class="badge badge-success">40%</span>
-              <span class="badge badge-danger">50%</span>
-              <span class="badge badge-warning">10%</span>
+              <span className="badge badge-success">40%</span>
+              <span className="badge badge-danger">50%</span>
+              <span className="badge badge-warning">10%</span>
             </li>
-            <li class="list-group-item d-flex justify-content-between align-items-center">
+            <li className="list-group-item d-flex justify-content-between align-items-center">
               <a>Kendrick Lamar</a>
-              <span class="badge badge-success">40%</span>
-              <span class="badge badge-danger">50%</span>
-              <span class="badge badge-warning">10%</span>
+              <span className="badge badge-success">40%</span>
+              <span className="badge badge-danger">50%</span>
+              <span className="badge badge-warning">10%</span>
             </li>
-            <li class="list-group-item d-flex justify-content-between align-items-center">
+            <li className="list-group-item d-flex justify-content-between align-items-center">
               <a>Glo</a>
-              <span class="badge badge-success">40%</span>
-              <span class="badge badge-danger">50%</span>
-              <span class="badge badge-warning">10%</span>
+              <span className="badge badge-success">40%</span>
+              <span className="badge badge-danger">50%</span>
+              <span className="badge badge-warning">10%</span>
             </li>
-            <li class="list-group-item d-flex justify-content-between align-items-center">
+            <li className="list-group-item d-flex justify-content-between align-items-center">
               <a>Tinubu</a>
-              <span class="badge badge-success">40%</span>
-              <span class="badge badge-danger">50%</span>
-              <span class="badge badge-warning">10%</span>
+              <span className="badge badge-success">40%</span>
+              <span className="badge badge-danger">50%</span>
+              <span className="badge badge-warning">10%</span>
             </li>
-            <li class="list-group-item d-flex justify-content-between align-items-center">
+            <li className="list-group-item d-flex justify-content-between align-items-center">
               <a>Buhari</a>
-              <span class="badge badge-success">40%</span>
-              <span class="badge badge-danger">50%</span>
-              <span class="badge badge-warning">10%</span>
+              <span className="badge badge-success">40%</span>
+              <span className="badge badge-danger">50%</span>
+              <span className="badge badge-warning">10%</span>
             </li>
-            <li class="list-group-item d-flex justify-content-between align-items-center">
+            <li className="list-group-item d-flex justify-content-between align-items-center">
               <a>Drake</a>
-              <span class="badge badge-success">40%</span>
-              <span class="badge badge-danger">50%</span>
-              <span class="badge badge-warning">10%</span>
+              <span className="badge badge-success">40%</span>
+              <span className="badge badge-danger">50%</span>
+              <span className="badge badge-warning">10%</span>
             </li>
-            <li class="list-group-item d-flex justify-content-between align-items-center">
+            <li className="list-group-item d-flex justify-content-between align-items-center">
               <a>Kendrick Lamar</a>
-              <span class="badge badge-success">40%</span>
-              <span class="badge badge-danger">50%</span>
-              <span class="badge badge-warning">10%</span>
+              <span className="badge badge-success">40%</span>
+              <span className="badge badge-danger">50%</span>
+              <span className="badge badge-warning">10%</span>
             </li>
-            <li class="list-group-item d-flex justify-content-between align-items-center">
+            <li className="list-group-item d-flex justify-content-between align-items-center">
               <a>Glo</a>
-              <span class="badge badge-success">40%</span>
-              <span class="badge badge-danger">50%</span>
-              <span class="badge badge-warning">10%</span>
+              <span className="badge badge-success">40%</span>
+              <span className="badge badge-danger">50%</span>
+              <span className="badge badge-warning">10%</span>
             </li>
-            <li class="list-group-item d-flex justify-content-between align-items-center">
+            <li className="list-group-item d-flex justify-content-between align-items-center">
               <a>Tinubu</a>
-              <span class="badge badge-success">40%</span>
-              <span class="badge badge-danger">50%</span>
-              <span class="badge badge-warning">10%</span>
+              <span className="badge badge-success">40%</span>
+              <span className="badge badge-danger">50%</span>
+              <span className="badge badge-warning">10%</span>
             </li>
-            <li class="list-group-item d-flex justify-content-between align-items-center">
+            <li className="list-group-item d-flex justify-content-between align-items-center">
               <a>Buhari</a>
-              <span class="badge badge-success">40%</span>
-              <span class="badge badge-danger">50%</span>
-              <span class="badge badge-warning">10%</span>
+              <span className="badge badge-success">40%</span>
+              <span className="badge badge-danger">50%</span>
+              <span className="badge badge-warning">10%</span>
             </li>
-            <li class="list-group-item d-flex justify-content-between align-items-center">
+            <li className="list-group-item d-flex justify-content-between align-items-center">
               <a>Drake</a>
-              <span class="badge badge-success">40%</span>
-              <span class="badge badge-danger">50%</span>
-              <span class="badge badge-warning">10%</span>
+              <span className="badge badge-success">40%</span>
+              <span className="badge badge-danger">50%</span>
+              <span className="badge badge-warning">10%</span>
             </li>
-            <li class="list-group-item d-flex justify-content-between align-items-center">
+            <li className="list-group-item d-flex justify-content-between align-items-center">
               <a>Kendrick Lamar</a>
-              <span class="badge badge-success">40%</span>
-              <span class="badge badge-danger">50%</span>
-              <span class="badge badge-warning">10%</span>
+              <span className="badge badge-success">40%</span>
+              <span className="badge badge-danger">50%</span>
+              <span className="badge badge-warning">10%</span>
             </li>
-            <li class="list-group-item d-flex justify-content-between align-items-center">
+            <li className="list-group-item d-flex justify-content-between align-items-center">
               <a>Glo</a>
-              <span class="badge badge-success">40%</span>
-              <span class="badge badge-danger">50%</span>
-              <span class="badge badge-warning">10%</span>
+              <span className="badge badge-success">40%</span>
+              <span className="badge badge-danger">50%</span>
+              <span className="badge badge-warning">10%</span>
             </li>
           </ul>
         </div>
