@@ -1,15 +1,15 @@
 import React from 'react';
-import Chart from './Chart';
+import Charts from './Chart';
 
 const Activity = () => (
     <div className="pb-4" style={{paddingTop: '170px', zIndex: '50'}}>
-      <Chart />
+      <Charts type="line"/>
       <div className="row py-4">
         <div className="col-sm-6">
-          <Chart />
+          <Charts type="bar"/>
         </div>
         <div className="col-sm-6">
-          <Chart />
+        <Charts type="doughnut" />
         </div>
       </div>
     </div>
