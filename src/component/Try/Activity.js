@@ -1,28 +1,18 @@
 import React from 'react';
-
+import Chart from './Chart';
 
 const Activity = () => (
-  <div className="col-9">
-    <div>
-      <ul className="nav navbar justify-content-end" style={{ width: '106%', marginLeft: '-15px'}}>
-        <li className="nav-item">
-          <a className="nav-link active" href="/">Home</a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="/About">About</a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="#">Docs</a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link " href="#">Try It Live</a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link " href="#">Contact Us</a>
-        </li>
-      </ul>
+    <div className="pb-4" style={{paddingTop: '170px', zIndex: '50'}}>
+      <Chart />
+      <div className="row py-4">
+        <div className="col-sm-6">
+          <Chart />
+        </div>
+        <div className="col-sm-6">
+          <Chart />
+        </div>
+      </div>
     </div>
-  </div>
 );
 
 export default Activity;

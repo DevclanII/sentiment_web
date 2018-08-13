@@ -85,10 +85,35 @@ ul.nav{
   margin-left: 50px;
 }
 
+.wraper{
+  perspective: 1500px;
+}
+
 #main {
   transition: margin-left .5s;
   padding: 16px;
 }
+
+#sidebar {
+  transition: all 0.6s cubic-bezier(0.945, 0.020, 0.270, 0.665);
+  transform-origin: center left;
+  min-width: 250px;
+}
+
+#sidebar.active {
+  display: block;
+}
+
+#dismiss {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  display: none;
+  /* top right corner of the sidebar */
+  top: 10px;
+  right: 10px;
+}
+
 
 @media screen and (max-height: 450px) {
   .sidenav {
@@ -96,5 +121,20 @@ ul.nav{
   }
   .sidenav a {
     font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  #sidebar {
+    transform: rotateY(185deg);
+  }
+  #sidebar.active {
+    transform: rotate(0deg);    
+  }
+  #dismiss {
+    display: block;
+  }
+  #scrol{
+    position: absolute;
   }
 }

@@ -1,14 +1,19 @@
 import React from 'react';
 
 const SideBar = () => (
-  <div className="col-3 indigo" style={{
-    minHeight: '100vh'
+  <div className="col-3 indigo" id="sidebar" style={{
+    height: '100vh',
+    zIndex: '9999',
+    overflowY: 'scroll'
   }}>
     <div>
+      <button id="dismiss" className="pb-4 btn btn-sm btn-secondary">
+        <i class="fa fa-arrow-left"></i>
+      </button>
       <img
         alt="log"
         src="http://via.placeholder.com/300x100"
-        className="img-fluid my-4"/>
+        className="img-fluid pt-4 my-4"/>
       <div>
         <form>
           <div class="form-group">
@@ -58,9 +63,9 @@ const SideBar = () => (
         <div>
           <ul
             className="list-group"
+            id="history"
             style={{
-            maxHeight: '300px',
-            overflowY: 'scroll'
+            maxHeight: '300px'
           }}>
             <li class="list-group-item d-flex justify-content-between align-items-center">
               <a>Tinubu</a>

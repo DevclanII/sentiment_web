@@ -5,9 +5,10 @@ import Faq from './Faq';
 import Try from './Try'
 import '../css/App.css';
 class App extends Component {
+
   render() {
     return (
-      <div className="App">
+      <div id="App">
         <Try />
       </div>
     );
