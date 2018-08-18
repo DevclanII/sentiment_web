@@ -1,6 +1,6 @@
 import React from 'react';
-import {Header} from './Header'
-import { Footer } from '../App';
+import Header from './Header'
+import Footer from './Footer';
 
 class LandingPage extends React.Component {
     render() {

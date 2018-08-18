@@ -7,7 +7,9 @@ const Intro = () => (
         <h3 className="">khzdkxczv  kbfkdsks bvdsbkfdh sdjkdskfdkg</h3>
         <p>
             Quisque in velit id ante suscipit convallis in ac mauris.Aliquam
-            eget venenatis urna,quis facilisis libero.Quisque in velit id ante suscipit convallis in ac mauris.Aliquam eget venenatis urna,quis facilisis libero.Quisque in velit id ante suscipit convallis in ac mauris.Aliquam
+            eget venenatis urna,quis facilisis libero.Quisque in velit id
+            ante suscipit convallis in ac mauris.Aliquam eget venenatis urna
+            ,quis facilisis libero.Quisque in velit id ante suscipit convallis in ac mauris.Aliquam
             eget venenatis urna, quis facilisis libero.
         </p>
       </div>

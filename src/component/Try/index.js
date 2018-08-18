@@ -2,6 +2,7 @@ import React from 'react';
 import SideBar from './SideBar';
 import Activity from './Activity'
 import axios from 'axios';
+import Nav from './Nav'
 
 class Try extends React.Component {
   constructor(props) {
@@ -58,48 +59,28 @@ class Try extends React.Component {
   }
   
   render() {
-
-      return (
-        <div className="wraper">
-          <div className="d-flex align-items-stretch">
-            <SideBar HandleSubmit={this.HandleSubmit} />
-            <div className="mx-auto" id="scrol" style={{ height: '100vh' }}>
-              <div className="row">
-                <ul className="nav navbar navbar-light bg-white fixed-top justify-content-end" style={{ width: '100%', zIndex: '999' }}>
-                  <button type="button" id="sidebarCollapse" className="btn btn-dark btn-sm mr-auto">
-                    <i className="fa fa-align-justify"></i>
-                  </button>
-                  <li className="nav-item">
-                    <a className="nav-link active" href="/">Home</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="/About">About</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#">Docs</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link " href="#">Try It Live</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link " href="#">Contact Us</a>
-                  </li>
-                </ul>
-              </div>
-              <Activity 
-                tag={this.state.Sentiment} 
-                num={this.state.Number}
-                isData={this.state.isData}
-                data={this.state.data}
-                loading={this.state.loading}
-                error={this.state.error}
-              />
+    return (
+      <div className="wraper">
+        <div className="d-flex align-items-stretch">
+          <SideBar HandleSubmit={this.HandleSubmit} />
+          <div className="mx-auto" id="scrol" style={{ height: '100vh' }}>
+            <div className="row">
+              <Nav />
             </div>
+            <Activity 
+              tag={this.state.Sentiment} 
+              num={this.state.Number}
+              isData={this.state.isData}
+              data={this.state.data}
+              loading={this.state.loading}
+              error={this.state.error}
+            />
           </div>
         </div>
-      )
-    }
+      </div>
+    )
   }
+}
 
 
 export default Try;

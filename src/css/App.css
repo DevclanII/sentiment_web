@@ -1,3 +1,15 @@
+.cover{
+  position: absolute;
+  background-image: url('../images/icon.png');
+  background-color: black;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 94vh;
+  z-index: 9999999;
+  width: 50%;
+  opacity: 0.3;
+}
+
 .backImg{
   padding: 9em 0 9em 0;
   background-color: #4686a0;
@@ -15,9 +27,7 @@
 }
 
 .pos-abs{
-  position: absolute;
   padding: 20px;
-  top: 30%;
 }
 
 a.nav-link{
@@ -44,7 +54,7 @@ ul.nav{
 
 .inner {
   background-attachment: fixed, fixed, fixed;
-  background-image: url("../images/overlay2.png"), url("../images/overlay3.svg"), linear-gradient(45deg, #9dc66b 5%, #4fa49a 30%, #4361c2);
+  background-image: url("../images/overlay3.svg"), linear-gradient(45deg, #9dc66b 5%, #4fa49a 30%, #4361c2);
   background-position: top left, center center, center center;
   background-size: auto, cover, cover;
   overflow: hidden;
@@ -109,7 +119,6 @@ ul.nav{
   height: 35px;
   position: absolute;
   display: none;
-  /* top right corner of the sidebar */
   top: 10px;
   right: 10px;
 }

@@ -1,7 +1,6 @@
 import React from 'react'
 import Chart from 'chart.js';
 
-
 class Bar extends React.Component {
   constructor(props) {
     super(props);
@@ -61,8 +60,6 @@ class Bar extends React.Component {
         }
       }
     });
-
-
   }
   render() {
     const {tag, num} = this.props

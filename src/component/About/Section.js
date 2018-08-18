@@ -23,8 +23,7 @@ const Section1 = () => (
         alt="#"
         src="http://via.placeholder.com/350x300"
         className="img-responsive"
-        width="100%"
-        height="100%"/>
+        />
     </div>
   </div>
 );
@@ -43,7 +42,7 @@ const Section2 = () => (
       </p>
     </div>
     <div className="col-sm-6 order-sm-first">
-      <img alt="#" src="http://via.placeholder.com/350x300" className="img-responsive" width="100%" height="100%" />
+      <img alt="#" src="http://via.placeholder.com/350x300" className="img-responsive"   />
     </div>
   </div>
 );
@@ -71,8 +70,7 @@ const Section3 = () => (
         alt="#"
         src="http://via.placeholder.com/350x300"
         className="img-responsive"
-        width="100%"
-        height="100%"/>
+        />
     </div>
   </div>
 );
@@ -96,8 +94,7 @@ const HTU = () => (
             alt="#"
             src="http://via.placeholder.com/150x100"
             className="img-responsive"
-            width="100%"
-            height="100%" />
+             />
         </div>
       </div>
       <div className="col-md-3 py-3">
@@ -107,10 +104,8 @@ const HTU = () => (
             alt="#"
             src="http://via.placeholder.com/150x100"
             className="img-responsive"
-            width="100%"
-            height="100%" />
+             />
         </div>
-        <em>Initial Results are based on the last 100 tweets</em>
       </div>
       <div className="col-md-3 py-3">
         <h6>Visualise The Analysis Anyway You Want.</h6>
@@ -119,8 +114,7 @@ const HTU = () => (
             alt="#"
             src="http://via.placeholder.com/150x100"
             className="img-responsive"
-            width="100%"
-            height="100%" />
+             />
         </div>
       </div>
       <div className="col-md-3 py-3">
@@ -130,8 +124,7 @@ const HTU = () => (
             alt="#"
             src="http://via.placeholder.com/150x100"
             className="img-responsive"
-            width="100%"
-            height="100%" />
+            />
         </div>
       </div>
     </div>

@@ -1,9 +1,6 @@
-import react from 'react'
-import $ from 'jquery'
+import $ from 'jquery';
 import 'malihu-custom-scrollbar-plugin';
 import 'jquery-mousewheel';
-import Chart from 'chart.js';
-
 
 $(document).ready(function () {
   $("#sidebar").mCustomScrollbar({ 
@@ -25,12 +22,10 @@ $(document).ready(function () {
   })
   $('#dismiss, #dismis')
     .on('click', function () {
-      // hide sidebar
       $('#sidebar').removeClass('active');
     });
 
   $('#sidebarCollapse').on('click', function () {
-    // open sidebar
     $('#sidebar').addClass('active');
     $('a[aria-expanded=true]').attr('aria-expanded', 'false');
   });

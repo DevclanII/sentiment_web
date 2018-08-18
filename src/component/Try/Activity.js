@@ -3,7 +3,6 @@ import Bar from './Bar';
 import Pie from './Pie';
 import ReactLoading from "react-loading";
 
-
 class Activity extends React.Component {
   constructor(props) {
     super(props)
