@@ -63,7 +63,7 @@ class Activity extends React.Component {
             <h1 className="display-3">
               An Error Occured with The Server.
             </h1>
-            <p className="lead mx-auto">
+            <p className="text-mute px-3 mx-auto">
                 there seems to be an issue with the server please try resubmiting request or try again later.
             </p>
           </div>

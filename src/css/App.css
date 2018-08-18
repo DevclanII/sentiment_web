@@ -1,13 +1,11 @@
 .cover{
-  position: absolute;
   background-image: url('../images/icon.png');
-  background-color: black;
+  background-color: #ffffffa3;
   background-repeat: no-repeat;
   background-position: center;
   height: 94vh;
   z-index: 9999999;
   width: 50%;
-  opacity: 0.3;
 }
 
 .backImg{
