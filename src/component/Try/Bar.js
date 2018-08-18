@@ -2,7 +2,7 @@ import React from 'react'
 import Chart from 'chart.js';
 
 
-class Charts extends React.Component {
+class Bar extends React.Component {
   constructor(props) {
     super(props);
   }
@@ -11,14 +11,14 @@ class Charts extends React.Component {
     var barChart = new Chart(chart, {
       type: this.props.type,
       data: {
-        labels: ["12:00"],
+        labels: [this.props.label],
         datasets: [{
           label: "Neutral",
           backgroundColor: "rgba(255,230,170)",
           borderColor: "rgba(255,230,170,1)",
           hoverBackgroundColor: "rgba(255,230,170,0.5)",
           hoverBorderColor: "rgba(255,230,170,1)",
-          data: [60],
+          data: [this.props.data.neutral],
           fill: false
         }, {
           label: "Positive",
@@ -26,7 +26,7 @@ class Charts extends React.Component {
           borderColor: "rgba(54,162,235,1)",
           hoverBackgroundColor: "rgba(54,162,235,0.5)",
           hoverBorderColor: "rgba(54,162,235,1)",
-          data: [50],
+          data: [this.props.data.positive],
           fill: false
         }, {
           label: "Negative",
@@ -34,7 +34,7 @@ class Charts extends React.Component {
           borderColor: "rgba(255,99,132,1)",
           hoverBackgroundColor: "rgba(255,99,132,0.5)",
           hoverBorderColor: "rgba(255,99,132,1)",
-          data: [65],
+          data: [this.props.data.negative],
           fill: false
         }],
       },
@@ -61,25 +61,26 @@ class Charts extends React.Component {
         }
       }
     });
+
+
   }
   render() {
+    const {tag, num} = this.props
     return (
       <div className="card mt-2">
         <div className="card-header">
-          Sentiment analysis for Davido
-          </div>
+          Sentiment analysis for {tag}
+          </div>{console.log(this.props)}
         <div className="card-body" style={{ maxHeight: 'auto' }}>
           <canvas ref={input => this.chart = input} />
         </div>
-        {/* <div className="card-footer text-muted">
-            <span className="text-danger">Negative</span>&emsp;
-            <span className="text-success">Postive</span> &emsp;
-            <span className="text-warning">Neutral</span>
-          </div> */}
+        <div className="card-footer text-muted">
+            <span className="text-danger">Based on the last {num}</span>
+          </div>
       </div>
     );
   }
 
 }
 
-export default Charts;
+export default Bar;

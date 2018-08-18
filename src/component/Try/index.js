@@ -1,44 +1,105 @@
 import React from 'react';
 import SideBar from './SideBar';
 import Activity from './Activity'
+import axios from 'axios';
 
 class Try extends React.Component {
-
-  render() {
-    return (
-      <div className="container-fluid wraper">
-        <div className="row">
-          <SideBar />
-          <div className="col-md-9" id="scrol" style={{height: '100vh'}}>
-            <div className="row">
-              <ul className="nav navbar navbar-light bg-white fixed-top justify-content-end" style={{ width: '100%', zIndex: '999' }}>
-                <button type="button" id="sidebarCollapse" className="btn btn-dark btn-sm mr-auto">
-                  <i className="fa fa-align-justify"></i>
-                </button>
-                <li className="nav-item">
-                  <a className="nav-link active" href="/">Home</a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="/About">About</a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="#">Docs</a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link " href="#">Try It Live</a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link " href="#">Contact Us</a>
-                </li>
-              </ul>
-            </div>
-            <Activity />
-          </div>
-        </div>
-      </div>
-      );
+  constructor(props) {
+    super(props);
+    this.state={
+      Sentiment : '',
+      Number: '',
+      loading: false,
+      error: false,
+      data: [],
+      isData: false
+    }
+    this.HandleSubmit = this.HandleSubmit.bind(this);
+    this.fetchData = this.fetchData.bind(this);
   }
 
-}
+  fetchData() {
+    this.setState({
+      data: [],
+      loading: true,
+      error: false,
+      isData: true
+    })
+    axios.post(`https://api-devclan.herokuapp.com/api_server/sentiment`, {
+      Sentiment: this.state.Sentiment,
+      Number: this.state.Number,
+    })
+      .then(res => {
+        console.log(res);
+        console.log(res.data);
+        this.setState({
+          data: res.data,
+          loading: false,
+          error: false,
+          isData: true
+        })
+      })
+      .catch(err => {
+        console.log(err)
+        this.setState({
+          data: err,
+          error: true,
+          loading: false,
+          isData: true
+        })
+      })
+  }
+  HandleSubmit(payload){
+    this.setState({
+      Sentiment : payload.Sentiment,
+      Number: payload.Number
+    })
+    setInterval(this.fetchData(), 60000)
+  }
+  
+  render() {
+
+      return (
+        <div className="wraper">
+          <div className="d-flex align-items-stretch">
+            <SideBar HandleSubmit={this.HandleSubmit} />
+            <div className="mx-auto" id="scrol" style={{ height: '100vh' }}>
+              <div className="row">
+                <ul className="nav navbar navbar-light bg-white fixed-top justify-content-end" style={{ width: '100%', zIndex: '999' }}>
+                  <button type="button" id="sidebarCollapse" className="btn btn-dark btn-sm mr-auto">
+                    <i className="fa fa-align-justify"></i>
+                  </button>
+                  <li className="nav-item">
+                    <a className="nav-link active" href="/">Home</a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link" href="/About">About</a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link" href="#">Docs</a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link " href="#">Try It Live</a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link " href="#">Contact Us</a>
+                  </li>
+                </ul>
+              </div>
+              <Activity 
+                tag={this.state.Sentiment} 
+                num={this.state.Number}
+                isData={this.state.isData}
+                data={this.state.data}
+                loading={this.state.loading}
+                error={this.state.error}
+              />
+            </div>
+          </div>
+        </div>
+      )
+    }
+  }
+
 
 export default Try;

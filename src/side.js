@@ -23,7 +23,7 @@ $(document).ready(function () {
     snapAmount: 188,
     snapOffset: 65
   })
-  $('#dismiss')
+  $('#dismiss, #dismis')
     .on('click', function () {
       // hide sidebar
       $('#sidebar').removeClass('active');

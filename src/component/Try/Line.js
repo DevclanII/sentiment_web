@@ -5,8 +5,18 @@ import Chart from 'chart.js';
 class LIne extends React.Component {
   constructor(props) {
     super(props);
+    this.state = {
+      Label: [],
+      positive: [],
+      neutral: [],
+      negative: []
+    }
   }
-  componentDidMount() {
+  componentDidMount(){
+    this.data();
+    this.neg();
+    this.pos();
+    this.net();
     const chart = this.chart;
 
     var barChart = new Chart(chart, {
@@ -60,12 +70,36 @@ class LIne extends React.Component {
     });
 
   }
+
+
+  data() {
+    this.setState((prevState, props) => ({
+      label: props.label.concat(prevState)
+    }))
+  }
+
+  pos() {
+    this.setState((prevState, props) => ({
+      positive: props.positive.concat(prevState)
+    }))
+  }
+  neg() {
+    this.setState((prevState, props) => ({
+      negative: props.negative.concat(prevState)
+    }))
+  }
+  net() {
+    this.setState((prevState, props) => ({
+      neutral: props.neutral.concat(prevState)
+    }))
+  }
+
   render() {
     return (
       <div className="card mt-2">
         <div className="card-header">
           Sentiment analysis for Davido
-          </div>
+          </div>{console.log(this.state)}
         <div className="card-body" style={{ maxHeight: 'auto' }}>
           <canvas ref={input => this.chart = input} />
         </div>

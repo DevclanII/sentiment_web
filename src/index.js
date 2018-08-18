@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './component/App';
+import {App} from './component/App';
 import registerServiceWorker from './registerServiceWorker';
 import 'font-awesome/css/font-awesome.min.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -13,5 +13,11 @@ import 'mdbreact/dist/scss/_custom-styles.scss';
 import 'mdbreact/dist/scss/mdb.scss';
 import './side';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import { BrowserRouter } from 'react-router-dom';
+
+ReactDOM.render(
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>
+, document.getElementById('root'));
 registerServiceWorker();

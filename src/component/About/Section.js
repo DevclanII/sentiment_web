@@ -160,22 +160,6 @@ const Sub = () => (
   </div>
 );
 
-const Footer = () => (
-  <footer>
-    <div className="container">
-      <div className="row">
-        <div className="col-sm-12">
-          <div className="float-left d-inline-flex">
-            <p><a href="/">Sentiko</a>&emsp;</p>
-            <p>© 2017-2018 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
-          </div>
-          <p className="float-right"><a href="#mainNav">Back to top</a></p> 
-        </div>
-      </div>
-    </div>
-  </footer>
-);
-
 const Sections = () => (
   <div>
     <div className="container">
@@ -187,9 +171,6 @@ const Sections = () => (
       <HTU />
     </div>
     <Sub />
-    <div className="container-fluid py-2">
-      <Footer className="pt-3"/>
-    </div>
   </div>
 );
 

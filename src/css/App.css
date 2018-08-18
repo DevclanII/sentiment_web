@@ -114,6 +114,9 @@ ul.nav{
   right: 10px;
 }
 
+.t{
+  width: 50%;
+}
 
 @media screen and (max-height: 450px) {
   .sidenav {
@@ -125,16 +128,18 @@ ul.nav{
 }
 
 @media (max-width: 768px) {
+  .t{
+    width: 100%;
+  }
   #sidebar {
     transform: rotateY(185deg);
+    margin-right: -250px;
   }
   #sidebar.active {
     transform: rotate(0deg);    
+    margin-right: 60px;
   }
   #dismiss {
     display: block;
-  }
-  #scrol{
-    position: absolute;
   }
 }
