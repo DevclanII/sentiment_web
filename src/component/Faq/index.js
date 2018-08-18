@@ -8,16 +8,16 @@ const Faq = () => (
   <div className="container-fluid">
     <div className="row">
       <SideBar />
-      <div className="col-9 m-auto">
-        <Nav />
+      <Nav />
+      <div className="col-8 my-auto">
         <div className="container" style={{paddingTop: "130px"}}>
           <QnA 
             Q="dfdjfgjhdbjhfbjdhbfdjhdskdgh"
             A="sdfdvjfhfjhfdhsgjdsvdjfccjhjfbvjsdcvjcvcdjshvcsjvcvcjhvcvcdsvchvds"
           />
-          <Footer />
         </div>
       </div>
+      <Footer />
     </div>
   </div>
 );
