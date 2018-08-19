@@ -57,7 +57,8 @@ const SideBar = ({HandleSubmit}) => (
                 ref={input => this.Numbers = input}
                 className="form-control"
                 placeholder="200, 300, 400"
-                max={800}
+                min={50}
+                max={700}
                 aria-describedby="helpId"/>
               <div className="input-group-prepend">
                 <span className="input-group-text" id="basic-addon1">tweet
