@@ -42,7 +42,7 @@ class Activity extends React.Component {
           style={{
             paddingTop: '120px',
             zIndex: '50'
-          }}>{console.log(loading, data)}
+          }}>
           <ReactLoading
             type="spinningBubbles"
             color="black"
@@ -78,7 +78,7 @@ class Activity extends React.Component {
           zIndex: '50'
         }}>
           <div className="row py-4">
-            <div className="col-sm-6">{console.log(data)}
+            <div className="col-sm-6">
               <Bar type="bar" tag={tag} num={num} label={data.time} data={data.percentages}/>
             </div>
             <div className="col-sm-6">

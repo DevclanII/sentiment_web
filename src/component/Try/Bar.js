@@ -67,7 +67,7 @@ class Bar extends React.Component {
       <div className="card mt-2">
         <div className="card-header">
           Sentiment analysis for {tag}
-          </div>{console.log(this.props)}
+          </div>
         <div className="card-body" style={{ maxHeight: 'auto' }}>
           <canvas ref={input => this.chart = input} />
         </div>

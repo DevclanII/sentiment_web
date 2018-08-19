@@ -98,7 +98,7 @@ class LIne extends React.Component {
       <div className="card mt-2">
         <div className="card-header">
           Sentiment analysis for Davido
-          </div>{console.log(this.state)}
+          </div>
         <div className="card-body" style={{ maxHeight: 'auto' }}>
           <canvas ref={input => this.chart = input} />
         </div>

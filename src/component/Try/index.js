@@ -31,8 +31,8 @@ class Try extends React.Component {
       Number: this.state.Number,
     })
       .then(res => {
-        console.log(res);
-        console.log(res.data);
+        // console.log(res);
+        // console.log(res.data);
         this.setState({
           data: res.data,
           loading: false,
@@ -41,7 +41,7 @@ class Try extends React.Component {
         })
       })
       .catch(err => {
-        console.log(err)
+        // console.log(err)
         this.setState({
           data: err,
           error: true,
