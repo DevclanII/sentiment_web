@@ -12,11 +12,7 @@ import 'mdbreact/dist/mdbreact.js';
 import 'mdbreact/dist/scss/_custom-styles.scss';
 import 'mdbreact/dist/scss/mdb.scss';
 import { BrowserRouter } from 'react-router-dom';
-import Raven from 'raven-js';
-
-// Raven
-//   .config('https://e3908afae3a448898289dd53e28af90b@sentry.io/1265356')
-//   .install();
+import ConfigRav from './Raven';
   
 ReactDOM.render(
   <BrowserRouter>
@@ -24,3 +20,4 @@ ReactDOM.render(
   </BrowserRouter>
 , document.getElementById('root'));
 registerServiceWorker();
+ConfigRav();
