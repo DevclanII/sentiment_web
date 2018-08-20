@@ -49,11 +49,11 @@ class Pie extends React.Component {
         <div className="card-header">
           Sentiment analysis for {tag}
         </div>
-        <div className="card-body" style={{ maxHeight: 'auto' }}>
+        <div className="card-body border" style={{ maxHeight: 'auto' }}>
           <canvas ref={input => this.chart = input} />
         </div>
         <div className="card-footer text-muted">
-          <span className="text-danger">Based on the last {num}</span>
+          <span className="text-info">Based on the last {num}</span>
         </div>
       </div>
     );

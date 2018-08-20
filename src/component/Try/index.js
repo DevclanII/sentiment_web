@@ -18,9 +18,10 @@ class Try extends React.Component {
     }
     this.HandleSubmit = this.HandleSubmit.bind(this);
     this.fetchData = this.fetchData.bind(this);
+    this.HandleRefresh = this.HandleRefresh.bind(this);
   }
 
-  fetchData() {
+  fetchData(payload) {
     this.setState({
       data: [],
       loading: true,
@@ -28,12 +29,12 @@ class Try extends React.Component {
       isData: true
     })
     axios.post(`https://api-devclan.herokuapp.com/api_server/sentiment`, {
-      Sentiment: this.state.Sentiment,
-      Number: this.state.Number,
+      Sentiment: payload.Sentiment,
+      Number: payload.Number
     })
       .then(res => {
-        //  console.log(res);
-        // console.log(res.data);
+          console.log(res);
+        console.log(res.data);
         this.setState({
           data: res.data,
           loading: false,
@@ -51,12 +52,17 @@ class Try extends React.Component {
         })
       })
   }
+
   HandleSubmit(payload){
     this.setState({
       Sentiment : payload.Sentiment,
       Number: payload.Number
     })
-    this.fetchData()
+    this.fetchData(payload)
+  }
+
+  HandleRefresh() {
+    this.fetchData(this.state)
   }
   
   render() {
@@ -75,6 +81,8 @@ class Try extends React.Component {
               data={this.state.data}
               loading={this.state.loading}
               error={this.state.error}
+              HandleSubmit={this.HandleSubmit} 
+              HandleRefresh={this.HandleRefresh}
             />
           </div>
         </div>
