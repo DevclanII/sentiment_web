@@ -6,7 +6,7 @@
   "background_color": "#ffffff",
   "display": "standalone",
   "Scope": "/",
-  "prompt_message": "Add TwitterSent to your Homescreen and be one click away from that analysis.",
+  "prompt_message": "Add TwitterSent to your Homescreen and be one click away from that sentiment analysis.",
   "start_url": "/Try?launcher=true",
   "icons": [
     {
