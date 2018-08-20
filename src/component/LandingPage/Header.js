@@ -17,7 +17,7 @@ class Header extends React.Component {
                   Quisque in velit id ante suscipit convallis in ac mauris. Aliquam
                   eget venenatis urna, quis facilisis libero. 
                 </h4>
-                <button type="button" class="btn btn-outline-dark round" style={{ borderRadius: '30px'}}>Read More</button>
+                <button type="button" className="btn btn-outline-dark round" style={{ borderRadius: '30px'}}>Read More</button>
               </div>
             </div>
           </div>

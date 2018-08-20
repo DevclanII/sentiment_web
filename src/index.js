@@ -11,10 +11,13 @@ import 'popper.js';
 import 'mdbreact/dist/mdbreact.js';
 import 'mdbreact/dist/scss/_custom-styles.scss';
 import 'mdbreact/dist/scss/mdb.scss';
-import './side';
-
 import { BrowserRouter } from 'react-router-dom';
+import Raven from 'raven-js';
 
+Raven
+  .config('https://e3908afae3a448898289dd53e28af90b@sentry.io/1265356')
+  .install();
+  
 ReactDOM.render(
   <BrowserRouter>
     <App />

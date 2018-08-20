@@ -1,21 +1,22 @@
 import React from 'react';
 import Footer from '../LandingPage/Footer';
-import Nav from './Nav';
 import SideBar from './SideBar';
+import Nav from './Nav';
 import QnA from './QnA'
 
 const Faq = () => (
-  <div className="container-fluid">
+  <div className="container-fluid" style={{zIndex: '999', width: '100vw' }}>
     <div className="row">
-      <SideBar />
       <Nav />
-      <div className="col-8 my-auto">
-        <div className="container" style={{paddingTop: "130px"}}>
-          <QnA 
-            Q="dfdjfgjhdbjhfbjdhbfdjhdskdgh"
-            A="sdfdvjfhfjhfdhsgjdsvdjfccjhjfbvjsdcvjcvcdjshvcsjvcvcjhvcvcdsvchvds"
-          />
-        </div>
+      <SideBar />
+      <div className="col-sm-9" style={{ paddingTop: "130px", minHeight: '96vh', wordWrap: 'break-word' }}>
+        <h1>
+          FAQ
+        </h1>
+        <QnA
+          Q="dfdjfgjhdbjhfbjdhbfdjhdskdgh"
+          A="sdfdvjfhfjhfdhsgjdsvdjfccjhjfbvjsdcvjcvcdjshvcsjvcvcjhvcvcdsvchvds"
+        />
       </div>
       <Footer />
     </div>

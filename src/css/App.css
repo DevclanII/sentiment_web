@@ -95,6 +95,7 @@ ul.nav{
 
 .wraper{
   perspective: 1500px;
+  overflow-x: hidden;
 }
 
 #main {
@@ -137,6 +138,9 @@ ul.nav{
 @media (max-width: 768px) {
   .t{
     width: 100%;
+  }
+  #disapper{
+    display: none;
   }
   #sidebar {
     transform: rotateY(185deg);

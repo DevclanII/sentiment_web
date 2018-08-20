@@ -2,7 +2,8 @@ import React from 'react';
 import SideBar from './SideBar';
 import Activity from './Activity'
 import axios from 'axios';
-import Nav from './Nav'
+import Nav from './Nav';
+import '../side';
 
 class Try extends React.Component {
   constructor(props) {
@@ -31,7 +32,7 @@ class Try extends React.Component {
       Number: this.state.Number,
     })
       .then(res => {
-        // console.log(res);
+        //  console.log(res);
         // console.log(res.data);
         this.setState({
           data: res.data,
@@ -55,7 +56,7 @@ class Try extends React.Component {
       Sentiment : payload.Sentiment,
       Number: payload.Number
     })
-    setInterval(this.fetchData(), 60000)
+    this.fetchData()
   }
   
   render() {

@@ -20,7 +20,7 @@ class Activity extends React.Component {
     if (isData === false) {
       return (
         <div
-          className="container pb-4"
+          className="pb-4"
           style={{
             paddingTop: '120px',
             zIndex: '50'
@@ -56,7 +56,7 @@ class Activity extends React.Component {
         <div 
           className="container px-2 pb-4"
           style={{
-          paddingTop: '120px',
+          paddingTop: '150px',
           zIndex: '50'
         }}>
           <div className="row text-center text-capatalize">
@@ -87,7 +87,7 @@ class Activity extends React.Component {
             <div className="col-sm-6">
               <Pie type="pie" tag={tag} num={num} label={data.time} data={data.percentages}/>
             </div>
-            <div className="col-sm-6">
+            <div className="col-sm-6">{console.log(data)}
               <Pie type="polarArea" tag={tag} num={num} label={data.time} data={data.percentages}/>
             </div>
           </div>

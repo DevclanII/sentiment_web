@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Nav = () =>(
-  <ul className="nav navbar navbar-light bg-white fixed-top justify-content-end" style={{zIndex: '999' }}>
+  <ul className="nav navbar navbar-light bg-white fixed-top justify-content-end" style={{zIndex: '999', width: '100vw' }}>
     <li className="nav-item">
       <a className="nav-link active" href="/">Home</a>
     </li>
