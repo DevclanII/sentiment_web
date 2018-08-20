@@ -41,7 +41,7 @@ class Activity extends React.Component {
             <p className="text-mute px-3 mx-auto">
               enter you search and number of tweet to generate the sentiment Analysis.
             </p>
-            <div className="mx-auto pt-4">
+            <div className="mx-auto pt-4" id="form">
               <form onSubmit={(e) => this.Submit(e)}>
                 <div className="form-group">
                   <label htmlFor="Search">Search</label>

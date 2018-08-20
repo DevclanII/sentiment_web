@@ -2,9 +2,6 @@ import React from 'react'
 import Chart from 'chart.js';
 
 class Bar extends React.Component {
-  constructor(props) {
-    super(props);
-  }
   componentDidMount() {
     const chart = this.chart;
     var barChart = new Chart(chart, {

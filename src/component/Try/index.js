@@ -70,7 +70,7 @@ class Try extends React.Component {
       <div className="wraper">
         <div className="d-flex align-items-stretch">
           <SideBar HandleSubmit={this.HandleSubmit} />
-          <div className="mx-auto" id="scrol" style={{ height: '100vh' }}>
+          <div className="mx-auto" id="scrol" style={{ height: '100vh', overflowY: 'scroll' }}>
             <div className="row">
               <Nav />
             </div>

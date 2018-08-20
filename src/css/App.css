@@ -126,6 +126,10 @@ ul.nav{
   width: 50%;
 }
 
+#form{
+  display: none;
+}
+
 @media screen and (max-height: 450px) {
   .sidenav {
     padding-top: 15px;
@@ -136,6 +140,9 @@ ul.nav{
 }
 
 @media (max-width: 768px) {
+  #form{
+    display: block;
+  }
   .t{
     width: 100%;
   }

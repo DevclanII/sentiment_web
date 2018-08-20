@@ -5,7 +5,7 @@ import Nav from './Nav';
 import QnA from './QnA'
 
 const Faq = () => (
-  <div className="container-fluid" style={{zIndex: '999', width: '100vw' }}>
+  <div className="container-fluid" style={{zIndex: '999', height: '100vh', overflowY: 'scroll',}}>
     <div className="row">
       <Nav />
       <SideBar />
