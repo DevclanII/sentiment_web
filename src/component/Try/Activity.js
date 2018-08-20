@@ -148,7 +148,7 @@ class Activity extends React.Component {
             <div className="col-sm-6 pt-2">
               <Pie type="pie" tag={tag} num={num} label={data.time} data={data.percentages}/>
             </div>
-            <div className="col-sm-6 pt-2">{console.log(data)}
+            <div className="col-sm-6 pt-2">
               <Pie type="polarArea" tag={tag} num={num} label={data.time} data={data.percentages}/>
             </div>
           </div>

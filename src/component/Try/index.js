@@ -33,8 +33,8 @@ class Try extends React.Component {
       Number: payload.Number
     })
       .then(res => {
-          console.log(res);
-        console.log(res.data);
+        //   console.log(res);
+        // console.log(res.data);
         this.setState({
           data: res.data,
           loading: false,
