@@ -6,8 +6,7 @@ $(document).ready(function () {
   $("#sidebar").mCustomScrollbar({ 
     theme: "minimal" 
   });
-  $('#dismiss, #dismis')
-    .on('click', function () {
+  $('#dismiss, #dismis').on('click', function () {
       $('#sidebar').removeClass('active');
     });
 

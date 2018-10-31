@@ -14,10 +14,13 @@ class Header extends React.Component {
               <Nav />
               <div className="p-4 my-auto">
                 <h4 className="text-lg-left text-md-center" style={{width: '70%', marginBottom: '30px'}}>
-                  Quisque in velit id ante suscipit convallis in ac mauris. Aliquam
-                  eget venenatis urna, quis facilisis libero. 
+                  Want To Elavate Your Brand ?<br />
+                  What That Clean Sheet Online Presences ?<br />
+                  Know What Your Audiences Think and Feel About You and Your Campaings<br />
+                  And Give Them The Right Content At The Right Time<br />
+                  And <strong>We Are Here To Help To Help You</strong>
                 </h4>
-                <button type="button" className="btn btn-outline-dark round" style={{ borderRadius: '30px'}}>Read More</button>
+                <button type="button" className="btn btn-outline-dark round" href="/Try" style={{ borderRadius: '30px'}}>Try It Now</button>
               </div>
             </div>
           </div>
